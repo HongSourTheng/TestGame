@@ -5,25 +5,43 @@ const gameContainer = document.getElementById("game-container");
 
 const flappyImg = new Image();
 flappyImg.src = 'img/dunk_bg.webp';
-flappyImg.width = 75;
-flappyImg.height =75;
+flappyImg.width = 65;
+flappyImg.height =65;
+
+// // GAME CONSTANTS
+// const FLAP_SPEED = -7;
+// const BIRD_WIDTH = 40;
+// const BIRD_HEIGHT = 30;
+// const PIPE_WIDTH = 50;
+// const PIPE_GAP = 125;
+
+// // BIRD VARIABLES
+// let birdX = 50;
+// let birdY = 50;
+// let birdVelocity = 0;
+// let birdAcceleration = 0.4;
+
+// // pipe variables 
+// let pipeX = 400;
+// let pipeY = canvas.height - 200;
 
 // GAME CONSTANTS
-const FLAP_SPEED = -5;
-const BIRD_WIDTH = 40;
+const FLAP_SPEED = -6;
+const BIRD_WIDTH = 30;
 const BIRD_HEIGHT = 30;
 const PIPE_WIDTH = 50;
 const PIPE_GAP = 125;
 
 // BIRD VARIABLES
-let birdX = 50;
-let birdY = 50;
+let birdX = 100;
+let birdY = 100;
 let birdVelocity = 0;
-let birdAcceleration = 0.2;
+let birdAcceleration = 0.4;
 
 // pipe variables 
 let pipeX = 400;
 let pipeY = canvas.height - 200;
+
 
 // score and highscore variables
 let scoreDiv = document.getElementById("score-display");
