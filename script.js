@@ -26,7 +26,7 @@ flappyImg.height =65;
 // let pipeY = canvas.height - 200;
 
 // GAME CONSTANTS
-const FLAP_SPEED = -2;
+const FLAP_SPEED = -7;
 const BIRD_WIDTH = 30;
 const BIRD_HEIGHT = 30;
 const PIPE_WIDTH = 50;
