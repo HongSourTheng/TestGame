@@ -16,7 +16,9 @@ canvas{
     background-repeat: no-repeat;
     z-index: 1;
 }
-
+canvas {
+    transform: translate3d(0, 0, 0);
+}
 .backdrop-blur{
     filter: blur(5px);
 }
