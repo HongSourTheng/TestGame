@@ -1,129 +1,119 @@
-body{
-    background-color: #73c8a9;
-    font-family: 'Press Start 2P', cursive;
-    background-image: linear-gradient(to right, #73c8a9, #373b44 );
-}
-
-canvas{
-    border: 5px solid #2e2e2e;
-    border-radius: 10px;
-    display: block;
-    margin: 50px auto;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    background-image: url('img/flabby_bg.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 1;
+body {
+  background-color: #73c8a9;
+  font-family: "Press Start 2P", cursive;
+  background-image: linear-gradient(to right, #73c8a9, #373b44);
 }
 canvas {
-    transform: translate3d(0, 0, 0);
+  border: 5px solid #2e2e2e;
+  border-radius: 10px;
+  display: block;
+  margin: 50px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-image: url("img/flabby_bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
 }
-.backdrop-blur{
-    filter: blur(5px);
+canvas {
+  transform: translate3d(0, 0, 0);
 }
-
-#end-menu{
-    display: none;
-    margin: 50px auto;
-    width: 250px;
-    padding: 20px;
-    text-align: center;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%,50%);
-    z-index: 99;
-
-}
-#end-menu .img-box{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-}
-#end-menu .img-box img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-}
-.box{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 55px;
-    height: 65px;
-}
-.box img{
-    width: 100%;
-    height: 100%;
-}
-#score-display{
-    color: #fff;
-    font-size: 2em;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+.backdrop-blur {
+  filter: blur(5px);
 }
 
-button{
-    background-color: #2e2e2e;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 1em;
-    padding: 15px 30px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: all .2s ease;
+#end-menu {
+  display: none;
+  margin: 50px auto;
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 99;
+}
+#end-menu .img-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+}
+#end-menu .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.box {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 55px;
+  height: 65px;
+}
+.box img {
+  width: 100%;
+  height: 100%;
+}
+#score-display {
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-button:hover{
-    background-color: #333;
-    transform: translateY(-2px);
-    box-shadow: 0 2px 4px  rgba(0,0,0,0.1);
-   
+button {
+  background-color: #2e2e2e;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 15px 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
 }
 
+button:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
 /* `xxl` applies to x-large devices (large desktops, less than 1400px)*/
 @media (max-width: 1399.98px) {
-    
 }
 /* `xl` applies to large devices (desktops, less than 1200px)*/
 @media (max-width: 1199.98px) {
-    
 }
 /* `lg` applies to medium devices (tablets, less than 992px)*/
 @media (max-width: 991.98px) {
-    
 }
 /* `md` applies to small devices (landscape phones, less than 768px)*/
 @media (max-width: 767.98px) {
-    
 }
 /* `sm` applies to x-small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
-    #game-container canvas{
-        height: 550px;
-    }
-    #end-menu{
-        width: 210px;
-    }
-    #end-menu .img-box{
-        width: 35px;
-        height: 35px;
-    }
-    #end-menu .box{
-        bottom: -1.5rem;
-        right: -0.35rem;
-    }
-    #end-menu .box img{
-        width: 40px;
-        height: 40px;
-    }
-    
+  #game-container canvas {
+    height: 400px;
+  }
+  #end-menu {
+    width: 210px;
+  }
+  #end-menu .img-box {
+    width: 35px;
+    height: 35px;
+  }
+  #end-menu .box {
+    bottom: -1.5rem;
+    right: -0.35rem;
+  }
+  #end-menu .box img {
+    width: 40px;
+    height: 40px;
+  }
 }
